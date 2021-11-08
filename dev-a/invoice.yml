@@ -5,9 +5,8 @@ metadata:
 spec:
   image: "k8s.gcr.io/hpa-example"
   port: 80
-  allowedClients:
-  - app: "some-allowed-client"
-  - app: "some-other-client"
+  - app: "fullfillment"
+  - app: "finance"
   healthcheck:
     path: /
   resources:
