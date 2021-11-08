@@ -1,0 +1,17 @@
+apiVersion: apps.hooli.com/v1alpha1
+kind: Webservice
+metadata:
+  name: fullfillment
+spec:
+  image: "k8s.gcr.io/hpa-example"
+  port: 80
+  allowedClients:
+  - app: "some-allowed-client"
+  - app: "some-other-client"
+  healthcheck:
+    path: /
+  resources:
+    min:
+      cpu: 400m
+    max:
+      cpu: 800m
