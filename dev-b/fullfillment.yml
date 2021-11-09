@@ -10,6 +10,6 @@ spec:
     path: /
   resources:
     min:
-      cpu: 400m
+      cpu: 10m
     max:
-      cpu: 800m
+      cpu: 80m
